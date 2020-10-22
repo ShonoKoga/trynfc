@@ -49,6 +49,7 @@ const verify = async (pin: string) => {
   // Array.from((new TextEncoder('utf-8')).encode(pin)).map(v => `0x${v.toString(16)}`)
   const data = pin;
 
+  // 誤って試行してしまうとロックされるためとりあえずコメントアウトしてる
   // const res = await commandHandler({
   //   cla: 0x00,
   //   ins: 0x20,
