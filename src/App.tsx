@@ -9,35 +9,38 @@ const Component = () => {
   return (
     <View
       style={{
-        padding: 20,
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Text>NFC Demo</Text>
-      <TouchableOpacity
-        style={{
-          padding: 10,
-          width: 200,
-          margin: 20,
-          borderWidth: 1,
-          borderColor: 'black',
-        }}
-        onPress={handleReadNfc}>
-        <Text>Test</Text>
-      </TouchableOpacity>
+      <View>
+        <Text style={{marginBottom: 30, textAlign: 'center', fontSize: 22}}>
+          NFC Demo
+        </Text>
+        <TouchableOpacity
+          style={{
+            padding: 10,
+            width: 200,
+            marginVertical: 20,
+            borderWidth: 1,
+            borderColor: 'black',
+          }}
+          onPress={handleReadNfc}>
+          <Text>Test</Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        style={{
-          padding: 10,
-          width: 200,
-          margin: 20,
-          borderWidth: 1,
-          borderColor: 'black',
-        }}
-        onPress={cleanUp}>
-        <Text>Cancel Test</Text>
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            padding: 10,
+            width: 200,
+            marginVertical: 20,
+            borderWidth: 1,
+            borderColor: 'black',
+          }}
+          onPress={cleanUp}>
+          <Text>Cancel Test</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

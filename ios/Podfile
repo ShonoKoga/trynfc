@@ -8,8 +8,6 @@ target 'trynfc' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'Whisper', '~> 3.1'
-
   target 'trynfcTests' do
     inherit! :complete
     # Pods for testing
