@@ -45,6 +45,8 @@ const useNfc = () => {
         await reader.readBinary();
 
         console.log('読み取り完了！');
+      } else {
+        console.log('Android');
       }
 
       cleanUp();
